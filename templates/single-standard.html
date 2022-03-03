@@ -1,0 +1,243 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Standard Post - Abstract</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+   <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="{% static 'css1/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css1/vendor.css' %}">
+
+    <!-- script
+    ================================================== -->
+    <script src="static/js1/modernizr.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    {% comment %} <div id="preloader">
+        <div id="loader"></div>
+    </div> {% endcomment %}
+    <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          {% comment %} <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+         
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <h ><a href="#top" class="active">Home</a></h>
+              <li ><a href="#about">About Us</a></li>
+              <li ><a href="#services">Services</a></li>
+              <li ><a href="#portfolio">Gallery</a></li>
+              <li ><a href="#blog">Articles</a></li> 
+              <li ><a href="#contact">Contact Us</a></li> 
+              <li ><div class="main-red-button"><a href="#contact">Download Now!</a></div></li> 
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav> {% endcomment %}
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+
+    <!-- content
+    ================================================== -->
+    <section class="s-content s-content--single">
+        <div class="row">
+            <div class="column large-12">
+
+                <article class="s-post entry format-standard">
+
+                    <div class="s-content__media">
+                        <div class="s-content__post-thumb">
+                            <img src="images/thumbs/single/standard/standard-1050.jpg" 
+                                 srcset="images/thumbs/single/standard/standard-2100.jpg 2100w, 
+                                         images/thumbs/single/standard/standard-1050.jpg 1050w, 
+                                         images/thumbs/single/standard/standard-525.jpg 525w" sizes="(max-width: 2100px) 100vw, 2100px" alt="">
+                        </div>
+                    </div> <!-- end s-content__media -->
+
+                    <div class="s-content__primary">
+
+                        <h2 class="s-content__title s-content__title--post">{{title}}</h2>
+
+                        <ul class="s-content__post-meta">
+                            {% comment %} <li class="date">September 05, 2020</li> {% endcomment %}
+                            <li class="cat"><a href="">{{name}}</a></li>
+                        </ul>
+
+                        {% comment %} <p class="lead">
+                       {{details}} </p>  {% endcomment %}
+
+                        {% comment %} <p>Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat nostrud cupidatat dolor sunt sint sit nisi est eu exercitation incididunt adipisicing veniam velit id fugiat enim mollit amet anim veniam dolor dolor irure velit commodo cillum sit nulla ullamco magna amet magna cupidatat qui labore cillum sit in tempor veniam consequat non laborum adipisicing aliqua ea nisi sint ut quis proident ullamco ut dolore culpa occaecat ut laboris in sit minim cupidatat ut dolor voluptate enim veniam consequat occaecat fugiat in adipisicing in amet Ut nulla nisi non ut enim aliqua laborum mollit quis nostrud sed sed.
+                        </p> {% endcomment %}
+
+                        <div style='margin:auto;'>
+                            <img style='margin:auto;'  src={{image}} >
+                        </div>
+{% comment %} 
+                        <p>Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat nostrud cupidatat dolor sunt sint sit nisi est eu exercitation incididunt adipisicing veniam velit id fugiat enim mollit amet anim veniam dolor dolor irure velit commodo cillum sit nulla ullamco magna amet magna cupidatat qui labore cillum sit in tempor veniam consequat non laborum adipisicing aliqua ea nisi sint ut quis proident ullamco ut dolore culpa occaecat ut laboris in sit minim cupidatat ut dolor voluptate enim veniam consequat occaecat fugiat in adipisicing in amet Ut nulla nisi non ut enim aliqua laborum mollit quis nostrud sed sed.
+                        </p>
+
+                        <h2>Large Heading</h2>
+
+                        <p>Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus <a href="http://#">omnis voluptas assumenda est</a> id quod maxime placeat facere possimus, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et.</p> {% endcomment %}
+
+                        <blockquote>
+                            <p>
+                            {{details}}
+                            </p>
+                            <cite>{{name}}</cite>
+                        </blockquote>
+
+                        <p>{{details}}</p>
+
+                        {% comment %} <h3>Smaller Heading</h3>
+
+                        <p>Quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+
+                        <p>Quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+                         {% endcomment %}
+{% comment %} <pre><style class="language-css">
+    code {
+        font-size: 1.4rem;
+        margin: 0 .2rem;
+        padding: .2rem .6rem;
+        white-space: nowrap;
+        background: #F1F1F1;
+        border: 1px solid #E1E1E1;	
+        border-radius: 3px;
+    }
+</style></pre>
+                             {% endcomment %}
+                        {% comment %} <p>Odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa.</p>
+
+                        <ul>
+                            <li>Donec nulla non metus auctor fringilla.
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                </ul>
+                            </li>
+                            <li>Donec nulla non metus auctor fringilla.</li>
+                            <li>Donec nulla non metus auctor fringilla.</li>
+                        </ul>
+
+                        <p>Odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue laboris in sit minim cupidatat ut dolor voluptate enim veniam consequat occaecat fugiat in adipisicing in amet Ut nulla nisi non ut enim aliqua laborum mollit quis nostrud sed sed..</p>                      {% endcomment %}
+
+                    </div> <!-- end s-content__primary -->
+                </article>
+
+            </div> <!-- end column -->
+        </div> <!-- end row -->
+
+
+
+
+            {% comment %} <div class="row comment-respond">
+
+                <!-- START respond -->
+                <div id="respond" class="column">
+
+                    <h3>
+                    Add Comment 
+                    <span>Your email address will not be published.</span>
+                    </h3>
+
+                    <form name="contactForm" id="contactForm" method="post" action="" autocomplete="off">
+                        <fieldset>
+
+                            <div class="form-field">
+                                <input name="cName" id="cName" class="h-full-width" placeholder="Your Name" value="" type="text">
+                            </div>
+
+                            <div class="form-field">
+                                <input name="cEmail" id="cEmail" class="h-full-width" placeholder="Your Email" value="" type="text">
+                            </div>
+
+                            <div class="form-field">
+                                <input name="cWebsite" id="cWebsite" class="h-full-width" placeholder="Website" value="" type="text">
+                            </div>
+
+                            <div class="message form-field">
+                                <textarea name="cMessage" id="cMessage" class="h-full-width" placeholder="Your Message"></textarea>
+                            </div>
+
+                            <input name="submit" id="submit" class="btn btn--primary btn-wide btn--large h-full-width" value="Add Comment" type="submit">
+
+                        </fieldset>
+                    </form> <!-- end form -->
+
+                </div>
+                <!-- END respond-->
+
+            </div> <!-- end comment-respond --> {% endcomment %}
+
+        </div> <!-- end comments-wrap -->
+
+    </section> <!-- end s-content -->
+
+
+   
+
+        <div class="s-footer__bottom">
+            <div class="row">
+                <div class="column">
+                    <div class="ss-copyright">
+                        <span>© Copyright TempleKart</span> 	         	
+                    </div> <!-- end ss-copyright -->
+                </div>
+            </div> 
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"/></svg>
+                </a>
+            </div> <!-- end ss-go-top -->
+        </div> <!-- end s-footer__bottom -->
+
+   </footer> <!-- end s-footer -->
+
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js1/jquery-3.2.1.min.js"></script>
+   <script src="js1/plugins.js"></script>
+   <script src="js1/main.js"></script>
+
+</body>
+
+</html>

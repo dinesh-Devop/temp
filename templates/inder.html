@@ -1,0 +1,459 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    
+
+    <head>
+        
+       <style>html {
+        scroll-behavior: smooth;
+      }</style>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    
+        <!-- Title -->
+        <title>Templekart</title>
+    
+        <!-- Favicon -->
+        <link rel="icon" href="{% static 'img/core-img/favicon.ico' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+        
+    
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+    </head>
+
+<body>
+    <!-- Preloader -->
+    {% comment %} <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div> {% endcomment %}
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div style='margin-bottom:-30px' class="oneMusic-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="navbar navbar-light" style="background-color: white;">
+                        <a style='font-size:20px' class="navbar-brand" href="#">Templekart</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                          <ul class="navbar-nav">
+                            <li class="nav-item active">
+                              <a style='font-size:20px' class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a style='font-size:20px' class="nav-link" href="blog">News</a>
+                            </li>
+                            <li class="nav-item">
+                              <a style='font-size:20px' class="nav-link" href="#contact">Contact</a>
+                            </li>
+                            {% comment %} <li class="nav-item dropdown">
+                              <a style='color:white;' class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown link
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                            </li> {% endcomment %}
+                          </ul>
+                        </div>
+                      </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Hero Area Start ##### -->
+    <section class="hero-area">
+        
+            <!-- Single Hero Slide -->
+            <div class="single-hero-slide d-flex align-items-center justify-content-center">
+                <!-- Slide Img -->
+                <div class="slide-img bg-img" style="background-image:url('https://images.unsplash.com/photo-1567591391293-f9a99c77e128?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80'); top/100 ;" >
+                    {% comment %} <img style='z-index:-10'  src="https://www.pixelstalk.net/wp-content/uploads/images2/Zeus-God-Wallpaper-HD.jpg">  {% endcomment %}
+                </div>
+                <!-- Slide Content -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="hero-slides-content text-center">
+                                {% comment %} <h6 data-animation="fadeInUp" data-delay="100ms">Templekart awaits you</h6> {% endcomment %}
+                                <h2 data-animation="fadeInUp" data-delay="300ms">Immerse into the spcace of <em>Divinity</em> </h2>
+                                <a data-animation="fadeInUp" data-delay="500ms" href="#" class="btn oneMusic-btn mt-50">Download for Android <i class="fa fa-android"></i></a>
+                                <a data-animation="fadeInUp" data-delay="500ms" href="#" class="btn oneMusic-btn mt-50">Download for Ios <i class="fa fa-apple"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Hero Slide -->
+            {% comment %} <div class="single-hero-slide d-flex align-items-center justify-content-center">
+                <!-- Slide Img -->
+                <div class="slide-img bg-img" style="background: url('static/img/videoplayback.mp4') top/100%;"></div>
+                <!-- Slide Content -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="hero-slides-content text-center">
+                                <h6 data-animation="fadeInUp" data-delay="100ms">Latest album</h6>
+                                <h2 data-animation="fadeInUp" data-delay="300ms">Colorlib Music <span>Colorlib Music</span></h2>
+                                <a data-animation="fadeInUp" data-delay="500ms" href="#" class="btn oneMusic-btn mt-50">Discover <i class="fa fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  {% endcomment %}
+      
+    </section>
+    <!-- ##### Hero Area End ##### -->
+
+    <!-- ##### Latest Albums Area Start ##### -->
+    <section class="latest-albums-area section-padding-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading style-2">
+                        <p>About Us</p>
+                        <h2>Templekart</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-9">
+                    <div class="ablums-text text-center mb-70">
+                        <p>Nam tristique ex vel magna tincidunt, ut porta nisl finibus. Vivamus eu dolor eu quam varius rutrum. Fusce nec justo id sem aliquam fringilla nec non lacus. Suspendisse eget lobortis nisi, ac cursus odio. Vivamus nibh velit, rutrum at ipsum ac, dignissim iaculis ante. Donec in velit non elit pulvinar pellentesque et non eros.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div >
+                        <!-- Single Album -->
+                        <div class="single-album">
+                            <img src="https://images.pexels.com/photos/10016250/pexels-photo-10016250.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                            <div class="album-info">
+                                <a href="#">
+                                    <h5>Namachivaya</h5>
+                                </a>
+                                
+                            </div>
+                        </div>
+
+                        {% comment %} <!-- Single Album -->
+                        <div class="single-album">
+                            <img src="img/bg-img/a2.jpg" alt="">
+                            <div class="album-info">
+                                <a href="#">
+                                    <h5>Sam Smith</h5>
+                                </a>
+                                <p>Underground</p>
+                            </div>
+                        </div>
+
+                        <!-- Single Album -->
+                        <div class="single-album">
+                            <img src="img/bg-img/a3.jpg" alt="">
+                            <div class="album-info">
+                                <a href="#">
+                                    <h5>Will I am</h5>
+                                </a>
+                                <p>First</p>
+                            </div>
+                        </div>
+
+                        <!-- Single Album -->
+                        <div class="single-album">
+                            <img src="img/bg-img/a4.jpg" alt="">
+                            <div class="album-info">
+                                <a href="#">
+                                    <h5>The Cure</h5>
+                                </a>
+                                <p>Second Song</p>
+                            </div>
+                        </div> {% endcomment %}
+
+                        {% comment %} <!-- Single Album -->
+                        <div class="single-album">
+                            <img src="img/bg-img/a5.jpg" alt="">
+                            <div class="album-info">
+                                <a href="#">
+                                    <h5>DJ SMITH</h5>
+                                </a>
+                                <p>The Album</p>
+                            </div>
+                        </div>
+
+                        <!-- Single Album -->
+                        <div class="single-album">
+                            <img src="img/bg-img/a6.jpg" alt="">
+                            <div class="album-info">
+                                <a href="#">
+                                    <h5>The Ustopable</h5>
+                                </a>
+                                <p>Unplugged</p>
+                            </div>
+                        </div>
+
+                        <!-- Single Album -->
+                        <div class="single-album">
+                            <img src="img/bg-img/a7.jpg" alt="">
+                            <div class="album-info">
+                                <a href="#">
+                                    <h5>Beyonce</h5>
+                                </a>
+                                <p>Songs</p>
+                            </div>
+                        </div> {% endcomment %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Latest Albums Area End ##### -->
+
+
+    <!-- ##### Featured Artist Area Start ##### -->
+    <section class="featured-artist-area section-padding-100 bg-img bg-overlay bg-fixed" style="background-image: url(static/img/bg-img/bg-4.jpg);">
+        <div class="container">
+            <div class="row align-items-end">
+                <div class="col-12 col-md-5 col-lg-4">
+                    <div class="featured-artist-thumb">
+                        <img src="static/img/bg-img/fa.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 col-lg-8">
+                    <div class="featured-artist-content">
+                        <!-- Section Heading -->
+                        <div class="section-heading white text-left mb-30">
+                            <p></p>
+                            <h2>"Testimonials"</h2>
+                        </div>
+                        <p>The most unique characteristic of the Nataraj Temple is the bejewelled image of Nataraj. The temple has five main Halls or Sabhas namely the Kanaka Sabha, the Cit Sabha, Nritta Sabha, Deva Sabha and Raja Sabha. Nataraj happens to be one of the most momentous forms of Lord Shiva.</p>
+                        <div class="content">
+                            <!-- <h1 style="color: whitesmoke;font-size: 18px;">Orders.....</h1> -->
+                            <div class="value" style="margin-left: -10px;" akhi="12500">0</div>
+                            <!-- <h1 style="color: whitesmoke;font-size: 18px;">Prasadham.....</h1> -->
+                            <div class="value" akhi="15000">0</div>
+                            <!-- <h1 style="color: whitesmoke;font-size: 18px;">Customers.....</h1> -->
+                            <div class="value" akhi="27500">0</div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Featured Artist Area End ##### -->
+    <div class="row">
+        <div class="col-12">
+            <div class="section-heading white wow fadeInUp" data-wow-delay="100ms">
+                <h2 style="color: rgb(27, 27, 27);margin-bottom: -50px;margin-top: 50px;font-size: 30px;">Gallery</h2>
+            </div>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="gallery__column">
+          <a href="#" target="_blank" class="gallery__link">
+            <figure class="gallery__thumb">
+              <img src="https://images.unsplash.com/photo-1625230417238-82847a53c9da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA0fHx0ZW1wbGVzJTIwb2YlMjBpbmRpYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Portrait by Oladimeji Odunsi" class="gallery__image">
+              <figcaption class="gallery__caption">Portrait by Guhan </figcaption>
+            </figure>
+          </a>
+      
+          <a href="#" target="_blank" class="gallery__link">
+            <figure class="gallery__thumb">
+              <img src="https://images.unsplash.com/photo-1557062975-92aa401cee64?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRlbXBsZXMlMjBvZiUyMGluZGlhfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Portrait by Oladimeji Odunsi" class="gallery__image">
+              <figcaption class="gallery__caption">Portrait by Karuppaiah</figcaption>
+            </figure>
+          </a>
+      
+          <a href="#" target="_blank" class="gallery__link">
+            <figure class="gallery__thumb">
+              <img src="https://images.unsplash.com/photo-1625072290979-cac544181be8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHRlbXBsZXMlMjBvZiUyMGluZGlhfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Portrait by Alex Perez" class="gallery__image">
+              <figcaption class="gallery__caption">Portrait by Yogaraj</figcaption>
+            </figure>
+          </a>
+        </div>
+        
+        <div class="gallery__column">
+          <a href="#" target="_blank" class="gallery__link">
+            <figure class="gallery__thumb">
+              <img src="https://images.unsplash.com/photo-1580309357308-b651068e8cde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHRlbXBsZXMlMjBvZiUyMGluZGlhfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Portrait by Noah Buscher" class="gallery__image">
+              <figcaption class="gallery__caption">Portrait by Jayson</figcaption>
+            </figure>
+          </a>
+          
+          <a href="#" target="_blank" class="gallery__link">
+            <figure class="gallery__thumb">
+              <img src="https://images.unsplash.com/photo-1631691003610-ba2c96433bb2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGtyaXNobmF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="Portrait by Ivana Cajina" class="gallery__image">
+              <figcaption class="gallery__caption">Portrait by Jay</figcaption>
+            </figure>
+          </a>
+      
+          <a href="#" target="_blank" class="gallery__link">
+            <figure class="gallery__thumb">
+              <img src="https://images.unsplash.com/photo-1566890910598-c5768889e83e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTIyfHx0ZW1wbGVzJTIwb2YlMjBpbmRpYXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60" alt="Portrait by Sam Burriss" class="gallery__image">
+              <figcaption class="gallery__caption">Portrait by Subash</figcaption>
+            </figure>
+          </a>
+        </div>
+        
+        <div class="gallery__column">
+          <a href="#" target="_blank" class="gallery__link">
+            <figure class="gallery__thumb">
+              <img src="https://images.unsplash.com/photo-1566915947951-80554e585b1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fHRlbXBsZXMlMjBvZiUyMGluZGlhfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Portrait by Mari Lezhava" class="gallery__image">
+              <figcaption class="gallery__caption">Portrait by Siva</figcaption>
+            </figure>
+          </a>
+          
+          <a href="#" target="_blank" class="gallery__link">
+            <figure class="gallery__thumb">
+              <img src="https://images.unsplash.com/photo-1567878673047-0451c851056e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fHRlbXBsZXMlMjBvZiUyMGluZGlhfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Portrait by Ethan Haddox" class="gallery__image">
+              <figcaption class="gallery__caption">Portrait by Yusuf</figcaption>
+            </figure>
+          </a>
+      
+          <a href="#" target="_blank" class="gallery__link">
+            <figure class="gallery__thumb">
+              <img src="https://images.unsplash.com/photo-1567582134958-7effe4fe06e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODN8fHZpbmF5YWthJTIwY2hhdHVydGhpfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Portrait by Amir Geshani" class="gallery__image">
+              <figcaption class="gallery__caption">Portrait by Pawan Kumar</figcaption>
+            </figure>
+          </a>
+        </div>
+        
+        <div class="gallery__column">
+          <a href="#" target="_blank" class="gallery__link">
+            <figure class="gallery__thumb">
+              <img src="https://images.unsplash.com/photo-1559128199-f2735a172d61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzV8fGdvZHMlMjBvZiUyMGhpbmR1aXNtfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Portrait by Guilian Fremaux" class="gallery__image">
+              <figcaption class="gallery__caption">Portrait by Agalya</figcaption>
+            </figure>
+          </a>
+      
+          <a href="#" target="_blank" class="gallery__link">
+            <figure class="gallery__thumb">
+              <img src="https://images.unsplash.com/photo-1569136143047-07c0fac16776?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTZ8fGtyaXNobmF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="Portrait by Jasmin Chew" class="gallery__image">
+              <figcaption class="gallery__caption">Portrait by Aashiq</figcaption>
+            </figure>
+          </a>
+          
+          <a href="#" target="_blank" class="gallery__link">
+            <figure class="gallery__thumb">
+              <img src="https://images.unsplash.com/photo-1616843413587-9e3a37f7bbd8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fHRlbXBsZXMlMjBzdXJyb3VuZGluZ3xlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60" alt="Portrait by Dima DallAcqua" class="gallery__image">
+              <figcaption class="gallery__caption">Portrait by Ramesh</figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
+
+    <!-- ##### Miscellaneous Area Start ##### -->
+    <section class="miscellaneous-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+        </div>
+        <h1>TAMIL NADU FAMOUS FOR TEMPLES</h1>
+        <p>These temples are a shining example of the cultural heritage of India along with some of the finest architectural creations that take you back to the historic Dravidian, Chola, and Pallava dynasties. Almost all the temples in Tamil Nadu are built in medieval times and add to the country's rich heritage.</p></div>
+    </section>
+    <!-- ##### Miscellaneous Area End ##### -->
+
+    <!-- ##### Contact Area Start ##### -->
+    <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" style="background-image: url(static/img/bg-img/bg-5.jpg);" id='contact'>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading white wow fadeInUp" data-wow-delay="100ms">
+                        <p>See what’s new</p>
+                        <h2>Get In Touch</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <!-- Contact Form Area -->
+                    <div class="contact-form-area">
+                        <form action="#" method="post">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group wow fadeInUp" data-wow-delay="100ms">
+                                        <input type="text" class="form-control" id="name" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group wow fadeInUp" data-wow-delay="200ms">
+                                        <input type="email" class="form-control" id="email" placeholder="E-mail">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group wow fadeInUp" data-wow-delay="300ms">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group wow fadeInUp" data-wow-delay="400ms">
+                                        <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center wow fadeInUp" data-wow-delay="500ms">
+                                    <button class="btn oneMusic-btn mt-30" type="submit">Send <i class="fa fa-angle-double-right"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Contact Area End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row d-flex flex-wrap align-items-center">
+                <div class="col-12 col-md-6">
+                    <a href="#"><img src="" alt=""></a>
+                    <p class="copywrite-text"><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by Templekart
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                </div>
+
+               
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="{% static 'js/jquery/jquery-2.2.4.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'js/bootstrap/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+    <!-- All Plugins js -->
+    <script src="{% static 'js/plugins/plugins.min.js' %}"></script>
+    <!-- Active js -->
+    <script src="{% static 'js/active.js' %}"></script>
+
+    <script src="{% static 'js/counter.js' %}"></script>
+</body>
+
+</html>
